@@ -208,14 +208,27 @@ Báo cáo học ARRAY:
        
     . Gỉa sử các phần tử của mảng có kiểu nguyên hoặc kiểu thực
     
-   * Sắp xếp lựa chọn:
-  
-     . Lấy phần tử đầu so sánh với các phần tử còn lại nếu nó thì đổi chỗ giá trị của phần tư đầu tiên với phần tử đang so sánh. Kết quả sau lượt đầu, phần tử đầu tiên sẽ giữ giá trị nhỏ nhất.
-     
-     . Tiếp tục lượt hai, lấy phần tử thứ hai so sánh với các phần tử tiếp theo, nếu nó lớn hơn thì đổi chỗ giá trị của phần tử thứ hai với phần tử đang so sánh.
-     
-     . Việc này được tiến hành cho đến khi ra gặp phần tử cuối cùng.
-     
-     . Cải tiến: ở một lượt i nào đó, thay vì đổi chỗ liên tục phần tử thứ i với phần tử có giá trị nhỏ hơn, thì ra chỉ thực hiện việc đổi chỗ phần tử nhỏ nhất ở lượt i với phần tử thứ i.
+  - Tìm kiếm phần tử trong mảng:
     
-   * Sắp xếp mảng
+    .  Tìm sự xuất hiện của một phần tử trong mảng.
+    
+    . Hai phương pháp cơ bản:
+      
+      - Tìm kiếm tuần tự.
+      
+      - Tìm kiếm nhị phân.
+
+<a name"mangnhieuchieu"></a>
+ b. Mảng nhiều chiều:
+   - Ví dụ, khai báo mảng hai chiều:
+   
+     int a[4][10]; //mảng có 4 hàng 10 cột
+    
+   - Truy cập các phần tử của mảng: a[0][0], a[0][1], a[i][j], ...
+   
+   - Ví dụ khác: 
+   
+      float arr[3][4][5];
+      
+      float arrc[4][4];
+      
