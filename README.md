@@ -2,17 +2,24 @@ Nguyễn Xuân Anh Thư
 
 Báo cáo học ARRAY:
 
-[1. Mảng một chiều ](#mangmotchieu)
+[1. Dữ liệu kiểu mảng](dulieukieumang)
+  [a. Khái niệm](khainiem)
+  [b. Cách khai báo biến mảng](khaibaobienmang)
+  [c. Cách tổ chức và truy xuất đến phần tử mảng](tochucvatruyhoi)
+  [d. Cách nhập xuất dữ liệu trên mảng](nhapxuatdulieu)
 
-[2. Mảng hai chiều](#manghaichieu)
-<a name="mangmotchieu"></a>
-## 1. Mảng một chiều
+[2. Kiểu mảng](kieumang)
+ [a. Mảng một chiều](mang1chieu)
+ [b. Mảng nhiều chiều](mangnhieuchieu)
+ 
+<a name="Dulieukieumang"></a>
+## 1. Dữ liệu kiểu mảng:
 .
 .
 .
 .
-<a name="manghaichieu"></a>
-## 2. Mảng hai chiều
+<a name="Kieumang"></a>
+## 2. Kiểu mảng:
 .
 .
 .
