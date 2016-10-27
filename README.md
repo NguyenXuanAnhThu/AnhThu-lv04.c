@@ -20,24 +20,25 @@ Báo cáo học ARRAY:
  
 <a name="Dulieukieumang"></a>
 ## 1. Dữ liệu kiểu mảng:
+
    <a name="khainiem"></a>
-     a. Khái niệm:
-     
-    * Mảng được hiểu là một tập hợp các giá trị có cùng kiểu dữ liệu nằm liên tiếp nhau trong bộ nhớ máy tính.
+    a. Khái niệm:
+       
+       * Mảng được hiểu là một tập hợp các giá trị có cùng kiểu dữ liệu nằm liên tiếp nhau trong bộ nhớ máy tính.
+       
+       * Mảng được coi như một biến mảng và tên mảng được đặt theo quy tác đặt tên biến.
+       
+       * Mảng có những thành phần sau:
     
-    * Mảng được coi như một biến mảng và tên mảng được đặt theo quy tác đặt tên biến.
+          - Kiểu dữ liệu của các phần tử trong mảng.
     
-    * Mảng có những thành phần sau:
+          - Tên mảng.
     
-      - Kiểu dữ liệu của các phần tử trong mảng.
-    
-      - Tên mảng.
-    
-      - Số chiều và kích thước của mỗi chiều.
+          - Số chiều và kích thước của mỗi chiều.
    <a name="khaibaobienmang"></a>
     b. Cách khai báo biến mảng:
     
-      **<kiểu_dữ_liệu><tên_mảng><danh_sách_các_chiều_của_mảng>**
+      <kiểu_dữ_liệu><tên_mảng><danh_sách_các_chiều_của_mảng>
       
       Ví dụ: int A[10]; //Mảng 1 chiều A gồm 10 phần tử kiểu số nguyên
             float B[2][3]; // Mảng 2 chiều B gồm 2 hàng 3 cột, các phần tử có kiểu số thực
@@ -46,7 +47,7 @@ Báo cáo học ARRAY:
       
       * Phần tử của mảng được xác định thông qua chỉ số. Chỉ số của phần tử trong mảng luôn là một số nguyên không vượt qua kích thước của mảng.
       
-      * Các phần tử của mảng được sắp xếp liền nhau trong bộ nhớ của máy tính và chỉ cho phép truy cập đến địa chỉ trực tiếp của phần tử đối với mảng một chiều. Cách truy cập theo địa chỉ: **&tên_biến[i]** ( trong đó i là chỉ số phần tử).
+      * Các phần tử của mảng được sắp xếp liền nhau trong bộ nhớ của máy tính và chỉ cho phép truy cập đến địa chỉ trực tiếp của phần tử đối với mảng một chiều. Cách truy cập theo địa chỉ: &tên_biến[i] ( trong đó i là chỉ số phần tử).
       
       * Ví dụ: a=&a[0] //Tên mảng chỉ tới địa chỉ phần tử đầu tiên của mảng.			
    <a name="nhapxuatdulieu"><a/>
@@ -140,3 +141,81 @@ Báo cáo học ARRAY:
       mangthuc10 x,y;
   
   - Mảng và địa chỉ:
+    
+    . Toán từ **&** dùng để lấy địa chỉ một biến.
+    
+    . Toán tử **&** cũng được dùng để lấy địa chỉ của một phần tử mảng.
+    
+    . Các phần tử trong mảng được bố trí các ô nhớ liên tiếp nhau trên bộ nhớ.
+       
+       Nếu biết được địa chỉ phần tử thứ i sẽ xác định được địa chỉ phần tử thứ i+1.
+       
+       Địa chỉ phần tử đầu tiên là địa chỉ của mảng.
+       
+    . Tên mảng mang địa chỉ của mảng đó.
+    
+    . Ví dụ: 
+        
+	float a[100];
+	
+	float *pa;
+	
+      Các cách viết sau là tương đương:
+        
+	a <=> &a[0]
+	
+	a+i <=> &a[i]
+	
+	*(a+i) <=> a[i]
+	
+      Các phép gán hợp lệ:
+         
+	pa=a;
+	
+	pa= &a[0];
+	
+  - Mảng là tham số của hàm:
+   
+    . Khi sử dụng mảng là tham số của hàm, ta có thể khai báo, chẳng hạn: int a[] hoặc int *a
+    
+    . Như thế, hai cách sau là tương đương:
+    
+     f(int a[]) {...}
+     
+     f(int *a) {...}
+     
+    . Khi sử dụng, có thể gọi: 
+      
+      f(a); hoặc f(&a[0]);
+   
+  - Sắp xếp mảng:
+  
+    . Sắp xếp các phần tử của mảng sao cho giá trị chúng theo thứ tự thăng dần hay giảm dần.
+    
+    . Vấn đề thường gặp trong tin lập trình.
+    
+    . Có nhiều cách sắp xếp khác nhau:
+       
+       . Sắp xếp lựa chọn
+       
+       . Sắp xếp nổi bọt
+       
+       . Sắp xếp nhanh
+       
+       . Sắp xếp vun đống
+       
+       . ...
+       
+    . Gỉa sử các phần tử của mảng có kiểu nguyên hoặc kiểu thực
+    
+   * Sắp xếp lựa chọn:
+  
+     . Lấy phần tử đầu so sánh với các phần tử còn lại nếu nó thì đổi chỗ giá trị của phần tư đầu tiên với phần tử đang so sánh. Kết quả sau lượt đầu, phần tử đầu tiên sẽ giữ giá trị nhỏ nhất.
+     
+     . Tiếp tục lượt hai, lấy phần tử thứ hai so sánh với các phần tử tiếp theo, nếu nó lớn hơn thì đổi chỗ giá trị của phần tử thứ hai với phần tử đang so sánh.
+     
+     . Việc này được tiến hành cho đến khi ra gặp phần tử cuối cùng.
+     
+     . Cải tiến: ở một lượt i nào đó, thay vì đổi chỗ liên tục phần tử thứ i với phần tử có giá trị nhỏ hơn, thì ra chỉ thực hiện việc đổi chỗ phần tử nhỏ nhất ở lượt i với phần tử thứ i.
+    
+   * Sắp xếp mảng
